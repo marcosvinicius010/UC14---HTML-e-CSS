@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botão Animado</title>
+
+<style>
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.botao{
+    position: relative;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    animation: chamarAtencao 4s infinite;
+}
+
+@keyframes chamarAtencao {
+    0%{
+        left: 0;
+        background: #3498db;
+    }
+
+    25%{
+        left: 150px;
+        top: -20px;
+        background: #2ecc71;
+    }
+
+    50%{
+        left: 300px;
+        top: 20px;
+        background: #f39c12;
+    }
+
+    75%{
+        left: 150px;
+        top: -20px;
+        background: #e74c3c;
+    }
+
+    100%{
+        left: 0;
+        top: 0;
+        background: #3498db;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<button class="botao">Clique Aqui</button>
+
+</body>
+</html>
+
